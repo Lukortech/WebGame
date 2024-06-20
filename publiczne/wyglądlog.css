@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+}
+.MenuAutoryzacji {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Okna {
+    display: flex;
+}
+.OknoRej {
+    height: 270px;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.OknoRej form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.OknoRej h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 30px;
+}
+.OknoRej input[type="Username"] {
+    
+}
+.OknoRej input[type="Password"] {
+    width: auto;
+    display: flex;
+    margin-top: 10px;
+}
+.OknoRej input[type="ConfirmPassword"] {
+    width: auto;
+    display: flex;
+}
+.OknoRej input[type="email"] {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.OknoRej input[type="submit"] {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+.OknoLog form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.OknoLog {
+    height: 240px;
+    width: 30vh;
+    margin-left: 5vh;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.OknoLog input[type="Username"] {
+    width: auto;
+    display: flex;
+    margin-bottom: 10px;
+}
+.OknoLog input[type="Password"] {
+    margin-top: 10px;
+    width: auto;
+    display: flex;
+}
+.OknoLog input[type="submit"] {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+.DiscordLog {
+    display: flex;
+    flex-direction: column;
+    bottom: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+.DiscordLog h3 {
+    text-align: center;
+}
