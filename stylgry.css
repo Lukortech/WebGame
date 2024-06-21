@@ -1,5 +1,7 @@
 #pasekGórny {
   display: flex;
+  height: 60px;
+  box-shadow: 0 0px 20px rgba(0,0,0,1);
 }
 #profil {
   position: relative;
@@ -9,21 +11,15 @@
   background-position: center;
   z-index: 1;
 }
-#profil::before {
-  content: "";
-  display: block;
-  padding-top: 160%; /* 5:8 proportion (8/5 = 1.6) */
-}
 #pasekSurki {
   flex: 1;
   background-color: rgba(16, 16, 16, 0.94);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
   color: white;
   text-align: center;
   line-height: 8vh;
   display: flex;
   justify-content: space-between;
-  padding: 0 10px;
+  padding: 0 3.5%;
   z-index: 0;
 }
 .surka, .jedzenie {
@@ -33,14 +29,85 @@
 }
 @media (min-width: 1376px) {
   #pasekGórny {
-    height: 8%;
+    height: 60px;
   }
   #profil {
-    height: auto;
+    height: 100%;
+    flex: 0 0 6%;
   }
   #pasekSurki {
-    height: 90px;
-    line-height: 90px;
+    height: 100%;
   }
 }
-
+@media (min-width: 1600px) {
+  #pasekGórny {
+    height: 80px;
+  }
+  #profil {
+    height: 100%;
+    flex: 0 0 6%;
+  }
+  #pasekSurki {
+    height: 100%;
+  }
+}
+@media (min-width: 1920px) {
+  #pasekGórny {
+    height: 80px;
+  }
+  #profil {
+    height: 100%;
+    flex: 0 0 6.5%;
+  }
+  #pasekSurki {
+    height: 100%;
+  }
+}
+@media (min-width: 2560px) {
+  #pasekGórny {
+    height: 90px;
+  }
+  #profil {
+    height: 100%;
+    flex: 0 0 5.5%;
+  }
+  #pasekSurki {
+    height: 100%;
+  }
+}
+@media (min-width: 3840px) {
+  #pasekGórny {
+    height: 100px;
+  }
+  #profil {
+    height: 100%;
+    flex: 0 0 4.5%;
+  }
+  #pasekSurki {
+    height: 100%;
+  }
+}
+@media (min-width: 3840px) {
+  #pasekGórny {
+    height: 100px;
+  }
+  #profil {
+    height: 100%;
+    flex: 0 0 4.5%;
+  }
+  #pasekSurki {
+    height: 100%;
+  }
+}
+@media (min-width: 7680px) {
+  #pasekGórny {
+    height: 140px;
+  }
+  #profil {
+    height: 100%;
+    flex: 0 0 3%;
+  }
+  #pasekSurki {
+    height: 100%;
+  }
+}
