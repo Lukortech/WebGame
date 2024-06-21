@@ -1,0 +1,46 @@
+#pasekGórny {
+  display: flex;
+}
+#profil {
+  position: relative;
+  flex: 0 0 8%;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Flag_of_Poland_%28normative%29.svg/1920px-Flag_of_Poland_%28normative%29.svg.png');
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+#profil::before {
+  content: "";
+  display: block;
+  padding-top: 160%; /* 5:8 proportion (8/5 = 1.6) */
+}
+#pasekSurki {
+  flex: 1;
+  background-color: rgba(16, 16, 16, 0.94);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  color: white;
+  text-align: center;
+  line-height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  z-index: 0;
+}
+.surka, .jedzenie {
+  border: 2px solid gray;
+  background-color: lightgray;
+  width: 30px;
+}
+@media (min-width: 1376px) {
+  #pasekGórny {
+    height: 8%;
+  }
+  #profil {
+    height: auto;
+  }
+  #pasekSurki {
+    height: 90px;
+    line-height: 90px;
+  }
+}
+
