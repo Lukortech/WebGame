@@ -19,13 +19,31 @@
   line-height: 8vh;
   display: flex;
   justify-content: space-between;
-  padding: 0 3.5%;
+  padding: 0 1%;
   z-index: 0;
 }
-.surka, .jedzenie {
-  border: 2px solid gray;
+.surka {
+  border: 5px solid rgb(173, 169, 169);
   background-color: lightgray;
-  width: 30px;
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#drewnoIkona {
+  width: 100%;
+  height: 100%;
+  background-image: url('publiczne/grafika/gra/drewno.png'); /* Add the path to your icon here */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#krzem {
+  display: none;
+}
+#uran {
+  display: none;
 }
 @media (min-width: 1376px) {
   #pasekGórny {
