@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>nations of industry</title>
+  <title>Nations of Industry</title>
   <link rel="stylesheet" href="wyglądlog.css"></style>
 </head>
 <body>
 <div class="MenuAutoryzacji">
     <div class="Okna">
         <div class="OknoRej">
-        <form action="/rejestruj" method="post">
+        <form action="/signup" method="post">
             <h2>Sign up</h2>
-            <input type="text" name="Username" placeholder="Nick" required>
+            <input type="text" name="Username" placeholder="Username" required>
             <input type="password" name="Password" placeholder="Password" required>
             <input type="password" name="ConfirmPassword" placeholder="Confirm Password" required>
             <input type="email" name="Email" placeholder="Email" required>
@@ -20,19 +20,19 @@
         </form>
         </div>
         <div class="OknoLog">
-        <form id="log" action="/loguj" method="post">
-            <h2>Log in</h2>
-            <input type="text" name="Username" placeholder="Nick" required>
-            <input type="password" name="Password" placeholder="Password" required>
-            <h5>Forget password?</h5>
-            <input type="submit" value="Log in">
-        </form>
+          <form id="log" action="/signin" method="post">
+              <h2>Sign in</h2>
+              <input type="text" name="Username" placeholder="Username" required>
+              <input type="password" name="Password" placeholder="Password" required>
+              <h5>Forgot password?</h5>
+              <input type="submit" value="Sign in">
+          </form>
         </div>
     </div>
         <div class="discordlog">
-            <h3>Log using Discord:</h3>
+            <h3>Authenticate using Discord:</h3>
             <button type="submit">
-            <img src="autoryzacja/discordlog.svg"></button>
+            <img src="auth/discordlog.svg"></button>
         </div>
     </div>
 </div>
